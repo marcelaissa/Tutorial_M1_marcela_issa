@@ -2,8 +2,8 @@ extends Node # instancia a classe Node2D
 
 var status = 1 # define a forma como o jogo começará: se =0: o jogo começará pausado e será necessário apertar a tecla 'enter' para iniciar; se x=1: começará imediatamente; se x>1: jogo não irá rodar.
 var vscore = 0 # define de que número iniciará a contagem dos pontos.
-var x = 3 #altera a velocidade horizontal dragão
-var y = 1.5 #altera a gravidade
+var x = 3 #altera a velocidade horizontal dragão.
+var y = 1.5 #altera a gravidade.
 
 # executa essa função ao carregar o jogo
 func _ready():
