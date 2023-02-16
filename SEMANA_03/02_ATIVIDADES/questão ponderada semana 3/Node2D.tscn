@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="lista_auto" type="Button" parent="."]
+margin_left = 64.0
+margin_top = 166.0
+margin_right = 208.0
+margin_bottom = 222.0
+text = "Lista automática"
+
+[node name="lista_geradora" type="Button" parent="."]
+margin_left = 789.0
+margin_top = 376.0
+margin_right = 933.0
+margin_bottom = 432.0
+text = "Lista geradora"
+
+[node name="apagar" type="Button" parent="."]
+margin_left = 784.0
+margin_top = 163.0
+margin_right = 928.0
+margin_bottom = 219.0
+text = "Apagar"
+
+[node name="texto" type="Button" parent="."]
+margin_left = 66.0
+margin_top = 380.0
+margin_right = 210.0
+margin_bottom = 436.0
+text = "Crie seu texto"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 353.0
+margin_top = 67.0
+margin_right = 635.0
+margin_bottom = 222.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 350.0
+margin_top = 290.0
+margin_right = 641.0
+margin_bottom = 448.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 25.0
+margin_top = 18.0
+margin_right = 253.0
+margin_bottom = 112.0
+
+[connection signal="pressed" from="lista_auto" to="." method="_on_lista_auto_pressed"]
+[connection signal="pressed" from="lista_geradora" to="." method="_on_lista_geradora_pressed"]
+[connection signal="pressed" from="apagar" to="." method="_on_apagar_pressed"]
+[connection signal="pressed" from="texto" to="." method="_on_texto_pressed"]
