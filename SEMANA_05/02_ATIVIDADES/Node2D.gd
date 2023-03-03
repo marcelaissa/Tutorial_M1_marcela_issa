@@ -31,7 +31,7 @@ func _on_Button3_pressed():
 	while len(lista) > i: #corrigi o i para que o loop possa ocorrer qnquanto o mesmo for menor que a lista
 		if(lista[i]%2==1):
 			cont+=1 
-		if(cont==0): #alterei para == para que o nome baldo apareça só uma vez
-			nome = nome+ " baldo \n"  #Adicionei uma quebra de linha
 		i += 1 #limitei o loop
+	if(cont!=0): #alterei para == para que o nome baldo apareça só uma vez
+			nome = nome+ " baldo \n"  #Adicionei uma quebra de linha
 	$ColorRect2/RichTextLabel2.text = nome
