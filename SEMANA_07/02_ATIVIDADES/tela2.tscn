@@ -7,16 +7,16 @@
 script = ExtResource( 2 )
 
 [node name="Tela2" type="Sprite" parent="."]
-position = Vector2( 705, 378 )
-scale = Vector2( 0.735417, 0.69537 )
+position = Vector2( 680, 374.75 )
+scale = Vector2( 0.709375, 0.689352 )
 texture = ExtResource( 1 )
 
 [node name="Button" type="Button" parent="."]
 modulate = Color( 0.929412, 0.952941, 0.933333, 1 )
-margin_left = 644.0
-margin_top = 570.0
-margin_right = 775.0
-margin_bottom = 632.0
+margin_left = 628.0
+margin_top = 550.0
+margin_right = 759.0
+margin_bottom = 612.0
 text = "Próximo"
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
