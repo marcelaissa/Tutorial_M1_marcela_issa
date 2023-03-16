@@ -12,10 +12,10 @@ scale = Vector2( 0.726562, 0.737963 )
 texture = ExtResource( 1 )
 
 [node name="Button" type="Button" parent="."]
-margin_left = 638.0
-margin_top = 620.0
-margin_right = 729.0
-margin_bottom = 670.0
+margin_left = 921.0
+margin_top = 341.0
+margin_right = 1012.0
+margin_bottom = 391.0
 text = "SAIR"
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
